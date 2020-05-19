@@ -62,4 +62,4 @@ jobs:
         aws-region: eu-north-1
     - name: Upload to AWS
       run: >-
-        aws s3 cp index.html s3://bekk-aws-tf-ws-host/
+        aws s3 cp index.html s3://bekk-aws-tf-ws-host/index.html
