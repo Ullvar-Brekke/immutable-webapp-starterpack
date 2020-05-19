@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const sha = 1;
 const environment =  "test";
-const url = 'https://my-bucket-url' ;
+const url = 'http://bekk-aws-tf-ws-asset.s3.eu-north-1.amazonaws.com' ;
 const date = new Date().toISOString();
 
 const index = `<!doctype html>
@@ -27,7 +27,7 @@ const index = `<!doctype html>
        <!-- application binding -->
        <app-root></app-root>
        <!-- fully-qualified static assets -->
-       <script src="${url}/assets/${sha}/main.js" type="text/javascript"></script>
+       <script src="${url}/asset/${sha}/main.js" type="text/javascript"></script>
    </body>
 </html>`;
 
